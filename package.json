@@ -1,0 +1,18 @@
+{
+  "name": "eth-identity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eth-crypto": "^2.6.0",
+    "ethers": "5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.7",
+    "terminal-kit": "^3.0.1"
+  }
+}
