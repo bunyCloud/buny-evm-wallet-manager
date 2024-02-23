@@ -75,7 +75,8 @@ Once an active wallet is selected, you can:
 ![loadWallet](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/958e877d-ba86-4b9d-8189-6667bb273074)
 
 ### Active Wallet
-![activeWallet](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/8211e5a2-66e0-4df5-a47c-1e05b3898a43)
+![activeWallet](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/c09022d9-83ae-43c8-b846-ce1c125a6e93)
+
 
 ### Export Wallet
 ![export](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/684578a9-7306-4fdd-94ac-8df6b58881c4)
