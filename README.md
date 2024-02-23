@@ -15,7 +15,7 @@ Ethereum Wallet Manager is a Node.js application designed for managing Ethereum 
 
 - **Identity Management**: Create and store Ethereum identities with their addresses, private keys, and public keys.
 - **Database Storage**: Use SQLite for persistent storage of Ethereum identities.
-- **Balance Checking**: Fetch and display the balance of any Ethereum address on the Avalanche Fuji Testnet.
+- **Balance Checking**: Fetch and display the balance of any Ethereum address on the Avalanche .
 - **Interactive Terminal Interface**: Navigate through the application's features using an intuitive terminal interface.
 
 ## Prerequisites
