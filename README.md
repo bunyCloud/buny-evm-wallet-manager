@@ -58,9 +58,8 @@ Upon launch, the application will connect to the SQLite database (creating it if
 
 Once an active wallet is selected, you can:
 
-- **View Balance**: Check the balance of the active wallet on the Avalanche Fuji Testnet.
-- **Open Position**: Placeholder for future functionality.
-- **View Position**: Placeholder for future functionality.
+- **View Balance**: Check the balance of the active wallet on Avalanche
+- **Export Private Key**: Export active wallet private key to file
 - **Transfer**: Placeholder for future functionality.
 - **Main Menu**: Return to the main menu.
 
