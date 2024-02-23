@@ -69,10 +69,22 @@ Once an active wallet is selected, you can:
 - **Transfer**: Placeholder for future functionality.
 - **Main Menu**: Return to the main menu.
 
-
+### Main Menu
 ![mainmenu](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/6a73384c-6dbe-4060-9280-94f2ab337361)
+### Load Wallet
+![loadWallet](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/958e877d-ba86-4b9d-8189-6667bb273074)
+
+### Active Wallet
+![activeWallet](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/8211e5a2-66e0-4df5-a47c-1e05b3898a43)
+
+### Export Wallet
+![export](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/684578a9-7306-4fdd-94ac-8df6b58881c4)
+
+### Transfer
+![transfer](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/7e9abb4f-5681-4dc7-986c-d0f6e18f5aa0)
 
 ```
+
 
 ## Contributing
 
