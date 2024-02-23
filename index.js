@@ -7,7 +7,7 @@ const { exportPrivateKeyToFile } = require("./modules/exportPrivateKeyToFile");
 const { initiateTransfer } = require("./modules/initiateTransfer");
 const {
   nativeToken,
-    } = require("../config");
+    } = require("./config");
 
 // Connect to the SQLite database
 const db = new sqlite3.Database(
@@ -118,7 +118,7 @@ async function activeWalletMenu() {
                 }
                 setTimeout(activeWalletMenu, 2000); // Return to the menu
                 break;
-          case "6":
+          case "3":
           mainMenu(); // Return to the main menu
           break;
           

@@ -64,7 +64,7 @@ async function activeWalletMenu() {
                 }
                 setTimeout(activeWalletMenu, 2000); // Return to the menu
                 break;
-          case "6":
+          case "3":
           mainMenu(); // Return to the main menu
           break;
           
