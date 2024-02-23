@@ -1,15 +1,17 @@
+---
+runme:
+  id: 01HQBY5GZX349915MBT7A3G1Z1
+  version: v3
+---
+
 # Ethereum Wallet Manager
 
-Ethereum Wallet Manager is a Node.js application designed for managing Ethereum identities. It leverages SQLite for storage, allowing users to create, list, and select Ethereum identities stored in a local database. Additionally, it integrates with the Avalanche Fuji Testnet to fetch balances for the Ethereum addresses.
+Ethereum Wallet Manager is a Node.js application designed for managing Ethereum identities. It leverages SQLite for storage, allowing users to create, list, and select Ethereum identities stored in a local database. Additionally, it integrates with the Avalanche to fetch balances for the Ethereum addresses.
 
 - **`eth-crypto`**: A library for Ethereum cryptography operations, such as creating identities (addresses, public keys, and private keys).
-
 - **`sqlite3`**: Provides a lightweight disk-based database that doesn’t require a separate server process, ideal for local storage of data in a structured format.
-
 - **`terminal-kit`**: A comprehensive library for making terminal applications, offering features like input fields, menus, color output, and more.
-
 - **`ethers`**: A complete Ethereum library and wallet implementation, allowing interaction with the Ethereum blockchain and its ecosystem.
-
 
 ## Features
 
@@ -25,24 +27,33 @@ Before running this application, ensure you have Node.js and npm installed. This
 ## Installation
 
 1. Clone the repository to your local machine.
-    ```bash
-    git clone <repository-url>
-    ```
+
+```bash {"id":"01HQBY5GZVMA36CBXABY778WTF"}
+git clone <repository-url>
+
+```
+
 2. Navigate into the application directory.
-    ```bash
-    cd ethereum-wallet-manager
-    ```
+
+```bash {"id":"01HQBY5GZWBBHVSTP8FBPR5XE3"}
+cd folder-name
+
+```
+
 3. Install the required dependencies.
-    ```bash
-    npm install
-    ```
+
+```bash {"id":"01HQBY5GZWBBHVSTP8FDARCR4Q"}
+yarn
+
+```
 
 ## Usage
 
 To start the application, run the following command in your terminal:
 
-```bash
-node app.js
+```bash {"id":"01HQBY5GZWBBHVSTP8FGY8MY5V"}
+yarn start
+
 ```
 
 Upon launch, the application will connect to the SQLite database (creating it if it does not exist) and present you with the main menu. From here, you can choose to load an existing wallet, create a new wallet, or import a wallet.
@@ -62,6 +73,10 @@ Once an active wallet is selected, you can:
 - **Export Private Key**: Export active wallet private key to file
 - **Transfer**: Placeholder for future functionality.
 - **Main Menu**: Return to the main menu.
+
+```bash {"id":"01HQBY7WKP6TAMCSFTM8HXKJEE"}
+![Menu Image](/mainMenu.png "Main menu")
+```
 
 ## Contributing
 
