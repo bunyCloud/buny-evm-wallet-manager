@@ -70,7 +70,8 @@ Once an active wallet is selected, you can:
 - **Main Menu**: Return to the main menu.
 
 
-![Menu Image]("https://github.com/bunyCloud/nodejs-eth-wallet-manager/blob/main/mainmenu.png")
+![mainmenu](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/6a73384c-6dbe-4060-9280-94f2ab337361)
+
 ```
 
 ## Contributing
