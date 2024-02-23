@@ -24,7 +24,7 @@ Before running this application, ensure you have Node.js and npm installed. This
 1. Clone the repository to your local machine.
 
 ```bash {"id":"01HQBY5GZVMA36CBXABY778WTF"}
-git clone <repository-url>
+git clone (https://github.com/bunyCloud/buny-evm-wallet-manager)
 
 ```
 
