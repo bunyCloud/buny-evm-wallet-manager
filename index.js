@@ -5,6 +5,9 @@ const { fetchBalance } = require("./modules/fetchBalance");
 const { createAndSaveIdentity } = require("./modules/createIdentity");
 const { exportPrivateKeyToFile } = require("./modules/exportPrivateKeyToFile");
 const { initiateTransfer } = require("./modules/initiateTransfer");
+const {
+  nativeToken,
+    } = require("../config");
 
 // Connect to the SQLite database
 const db = new sqlite3.Database(
@@ -49,7 +52,7 @@ function listAndSelectIdentity(callback) {
       return callback && callback(err);
     }
     if (rows.length > 0) {
-      console.log("Available Ethereum Identities:");
+      console.log("Available Wallets:");
       let options = rows.map((row) => `ID: ${row.id}, Address: ${row.address}`);
       term.singleColumnMenu(options, async (error, response) => { // Note the `async` keyword
         if (error) {
@@ -84,7 +87,7 @@ async function activeWalletMenu() {
     // Fetch the balance dynamically
     const balance = await fetchBalance(global.activeWallet.address);
     if (balance !== null) {
-        term.cyan(` | Balance: ${balance} AVAX\n`);
+        term.cyan(` | Balance: ${balance} ${nativeToken}\n`);
     } else {
         term.cyan(" | Balance: Fetching failed or not available\n");
     }
@@ -93,9 +96,6 @@ async function activeWalletMenu() {
 }
 
   term.green("Wallet Menu:\n");
-/**  term.green("1. View Positions\n");
-  term.green("2. Open Position\n");
-  term.green("3. Close Position\n"); */
   term.green("1. Transfer\n");
   term.green("2. Export Private Key\n");
   term.green("3. Main Menu\n");
@@ -104,23 +104,7 @@ async function activeWalletMenu() {
     { history: [], autoComplete: [], autoCompleteMenu: false },
     function (error, input) {
       switch (input) {
-       /** case "1":
-          if (global.activeWallet && global.activeWallet.address) {
-            console.log("view positions functionality goes here."); // Placeholder
-            setTimeout(activeWalletMenu, 2000);
-          } else {
-            console.log("No active wallet selected.");
-            setTimeout(activeWalletMenu, 2000);
-          }
-          break;
-        case "2":
-          // Placeholder for Transfer functionality
-          console.log("Open Position functionality goes here.");
-          setTimeout(activeWalletMenu, 2000); // Return to active wallet menu after action
-          break;
-        case "3":
-          console.log("Close Position");
-          break; */
+      
         case "1":
           console.log("Transfer balance");
           initiateTransfer(activeWalletMenu);
@@ -155,7 +139,7 @@ function mainMenu() {
   term.yellow(`Active Wallet Address: ${global.activeWallet.address}`);
   // Check and display balance if available
   if (global.activeWallet.balance !== null) {
-    term.cyan(` | Balance: ${global.activeWallet.balance} AVAX\n`);
+    term.cyan(` | Balance: ${global.activeWallet.balance} ${nativeToken}\n`);
   } else {
     term.cyan(" | Balance: Fetching failed or not available\n");
   }

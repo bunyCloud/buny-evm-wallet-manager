@@ -1,9 +1,11 @@
 // transferService.js
 const { ethers } = require('ethers');
+const {
+    provider
+      } = require("../config");
 
 async function transferFunds(senderPrivateKey, recipientAddress, amount) {
-    const rpcUrl = "https://api.avax-test.network/ext/bc/C/rpc";
-    const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
+    
     const wallet = new ethers.Wallet(senderPrivateKey, provider);
 
     try {

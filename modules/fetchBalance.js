@@ -2,6 +2,7 @@
 const { ethers } = require('ethers');
 const {
 provider,
+network,
   } = require("../config");
 
 async function fetchBalance(address) {
@@ -16,7 +17,7 @@ async function fetchBalance(address) {
         
         return balanceInEther; // Return the balance
     } catch (error) {
-        console.error(`Failed to fetch balance for ${address} on Avalanche Fuji Testnet:`, error);
+        console.error(`Failed to fetch balance for ${address} on ${network}:`, error);
         return null; // Return null in case of error
     }
 }

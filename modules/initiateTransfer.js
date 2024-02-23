@@ -7,7 +7,7 @@ async function initiateTransfer(mainMenu) {
   term('Recipient Address: ');
   term.inputField(async (error, recipientAddress) => {
     // Implementation remains the same...
-    term('\nAmount to Transfer (AVAX): ');
+    term('\nAmount to Transfer: ');
     term.inputField(async (error, amount) => {
       // Continue with the implementation...
       if (!global.activeWallet || !global.activeWallet.address) {
