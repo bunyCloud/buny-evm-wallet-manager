@@ -1,8 +1,3 @@
----
-runme:
-  id: 01HQBY5GZX349915MBT7A3G1Z1
-  version: v3
----
 
 # Ethereum Wallet Manager
 
@@ -74,8 +69,9 @@ Once an active wallet is selected, you can:
 - **Transfer**: Placeholder for future functionality.
 - **Main Menu**: Return to the main menu.
 
-```bash {"id":"01HQBY7WKP6TAMCSFTM8HXKJEE"}
-![Menu Image](/mainMenu.png "Main menu")
+
+![mainmenu](https://github.com/bunyCloud/nodejs-eth-wallet-manager/assets/112536156/6a73384c-6dbe-4060-9280-94f2ab337361)
+
 ```
 
 ## Contributing
